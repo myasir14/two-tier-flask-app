@@ -33,7 +33,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh "docker compose up -d --build two-tier-flask-app"
+                sh "docker compose up"
             }
         }
     }
